@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+	<!-- User Servlet -->
+	<servlet>
+		<servlet-name>registerUser</servlet-name>
+		<servlet-class>user.Registration</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registerUser</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>user.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>updateUser</servlet-name>
+		<servlet-class>user.updateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateUser</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deleteUser</servlet-name>
+		<servlet-class>user.DeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteUser</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	<!-- Video Servlet -->
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>controller.searchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Upload Video</servlet-name>
+		<servlet-class>controller.videoInsert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Upload Video</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Update Video</servlet-name>
+		<servlet-class>controller.updateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Update Video</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Delete Video</servlet-name>
+		<servlet-class>controller.deleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Delete Video</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>serach.jsp</welcome-file>
+	</welcome-file-list>
+	
+	
+	
+	
+	<!-- Advertisement Servlet -->
+	<servlet>
+  		<servlet-name>createAd</servlet-name> 
+  		<servlet-class>com.advertisement.createAd</servlet-class>
+   </servlet>  
+   <servlet-mapping>
+   		<servlet-name>createAd</servlet-name> 
+   		<url-pattern>/createAd</url-pattern>
+   </servlet-mapping>   
+   <servlet>
+  		<servlet-name>GetAllAds</servlet-name> 
+  		<servlet-class>com.advertisement.GetAllAds</servlet-class>
+   </servlet>   
+   <servlet-mapping>
+   		<servlet-name>GetAllAds</servlet-name> 
+   		<url-pattern>/GetAllAds</url-pattern>
+   </servlet-mapping> 
+   <servlet>
+  		<servlet-name>AdUpdateServlet</servlet-name> 
+  		<servlet-class>com.advertisement.AdUpdateServlet</servlet-class>
+   </servlet>  
+   <servlet-mapping>
+   		<servlet-name>AdUpdateServlet</servlet-name> 
+   		<url-pattern>/AdUpdateServlet</url-pattern>
+   </servlet-mapping>   
+   <servlet>
+  		<servlet-name>adDeleteServlet</servlet-name> 
+  		<servlet-class>com.advertisement.adDeleteServlet</servlet-class>
+   </servlet>  
+   <servlet-mapping>
+   		<servlet-name>adDeleteServlet</servlet-name> 
+   		<url-pattern>/adDeleteServlet</url-pattern>
+   </servlet-mapping>  
+   <servlet>
+  		<servlet-name>BannerAdServlet</servlet-name> 
+  		<servlet-class>com.advertisement.BannerAdServlet</servlet-class>
+   </servlet> 
+   <servlet-mapping>
+   		<servlet-name>BannerAdServlet</servlet-name> 
+   		<url-pattern>/homePage</url-pattern>
+   </servlet-mapping>
+    <servlet>
+  		<servlet-name>AdRequestServlet</servlet-name> 
+  		<servlet-class>com.advertisement.AdRequestServlet</servlet-class>
+   </servlet> 
+   <servlet-mapping>
+   		<servlet-name>AdRequestServlet</servlet-name> 
+   		<url-pattern>/AdRequestServlet</url-pattern>
+   </servlet-mapping>   
+   <servlet>
+  		<servlet-name>RequestsGetAll</servlet-name> 
+  		<servlet-class>com.advertisement.RequestsGetAll</servlet-class>
+   </servlet> 
+   <servlet-mapping>
+   		<servlet-name>RequestsGetAll</servlet-name> 
+   		<url-pattern>/RequestsGetAll</url-pattern>
+   </servlet-mapping>
+
+
+
+
+
+
+ 	<!-- comment Servlet -->
+    <servlet>
+        <servlet-name>studentservlet</servlet-name>
+        <servlet-class>servlet.studentservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>studentservlet</servlet-name>
+        <url-pattern>/studentservlet</url-pattern>
+    </servlet-mapping>   
+    <servlet>
+        <servlet-name>commentservlet</servlet-name>
+        <servlet-class>servlet.commentservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>commentservlet</servlet-name>
+        <url-pattern>/commentservlet</url-pattern>
+    </servlet-mapping>   
+    <servlet>
+        <servlet-name>viewcomments</servlet-name>
+        <servlet-class>servlet.viewcomments</servlet-class>
+    </servlet>
+  <servlet-mapping>
+        <servlet-name>viewcomments</servlet-name>
+        <url-pattern>/viewcomments</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>editComment</servlet-name>
+        <servlet-class>servlet.editComment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editComment</servlet-name>
+        <url-pattern>/editComment</url-pattern>
+    </servlet-mapping>
+      <servlet>
+        <servlet-name>deleteComment</servlet-name>
+        <servlet-class>servlet.deleteComment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteComment</servlet-name>
+        <url-pattern>/deleteComment</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>usercomments</servlet-name>
+    	<servlet-class>servlet.usercomments</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>usercomments</servlet-name>
+    	<url-pattern>/usercomments</url-pattern>
+	</servlet-mapping>
+    
+    
+    <!-- Reply Servlet -->
+	<servlet>
+	    <servlet-name>InsertReplyServlet</servlet-name>
+	    <servlet-class>servlet.InsertReplyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>InsertReplyServlet</servlet-name>
+	    <url-pattern>/insertReply</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>EditReplyServlet</servlet-name>
+	    <servlet-class>servlet.EditReplyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>EditReplyServlet</servlet-name>
+	    <url-pattern>/editReply</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>DeleteReplyServlet</servlet-name>
+	    <servlet-class>servlet.DeleteReplyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>DeleteReplyServlet</servlet-name>
+	    <url-pattern>/deleteReply</url-pattern>
+	</servlet-mapping>
+    
+
+</web-app>

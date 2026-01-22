@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+header {
+    background-color: #051541ee;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 290px; /* aligns with sidebar width */
+    width: calc(100% - 290px); /* full width minus sidebar */
+    height: 50px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+header nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin-bottom:40px;
+    
+}
+
+header nav a:hover {
+    color: #0056b3;
+}
